@@ -2,7 +2,10 @@
   <div>
     <div class="card" style="width: 18rem;">
       <div class="card-body">
-        <h5 class="card-title" v-if="prices != null"><i class="fas fa-money-bill-alt"></i> Portfolio Value: {{totalFolioValue | toCurrency(currency)}}</h5>
+        <h5 class="card-title" v-if="prices != null">
+            <i class="fas fa-money-bill-alt"></i> 
+            Portfolio Value: {{totalFolioValue | toCurrency(currency)}}
+        </h5>
         <h6 v-if="nonNullTokens != null" class="card-subtitle mb-2 text-muted">Tokens included in value</h6>
         <p class="card-text" v-if="nonNullTokens != null"> 
             <ul id="tokenList">

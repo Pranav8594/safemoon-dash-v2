@@ -6,7 +6,10 @@
                 <h6 class="card-text mt-3">
                     <div class="input-group mb-3">
                         <input type="text" class="form-control" v-model="text" placeholder="Wallet Address" aria-describedby="button-addon2" readonly>
-                        <button class="btn btn-outline-secondary"  v-on:click="copyAddress"  type="button" id="button-addon2"><i class="fas fa-copy"></i> {{btnTitle}}</button>
+                        <button class="btn btn-outline-secondary"  v-on:click="copyAddress"  type="button" id="button-addon2">
+                            <i class="fas fa-copy"></i> 
+                            {{btnTitle}}
+                        </button>
                     </div>
                 </h6>
                 <div class="card-text">

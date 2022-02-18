@@ -83,7 +83,7 @@ export default {
 /* .card{
   background-color: #12181b;
   color: white;
-} */
+} 
 
 /* input[type="text"], textarea {
 

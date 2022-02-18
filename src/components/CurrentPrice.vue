@@ -2,8 +2,13 @@
     <div v-if="info != null"> <!-- only renders page if data exists  -->
         <div class="card" style="width: 18rem;">
             <div class="card-body">
-                <h5 class="card-title"><i class="fas fa-dollar-sign"></i> Current Price: {{ info[currentFiatConversion] | toCurrency(currentFiatConversion)}}</h5>
-                <h6 class="card-subtitle mb-2 text-muted"><p v-bind:class="{ 'badge rounded-pill bg-success': priceUp, 'badge rounded-pill bg-danger': priceDown }">24h: {{info[currentFiatConversion+'_24h_change'] | toOneDecimal}}%</p></h6>
+                <h5 class="card-title">
+                    <i class="fas fa-dollar-sign"></i> 
+                    Current Price: {{ info[currentFiatConversion] | toCurrency(currentFiatConversion)}}
+                </h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                    <p v-bind:class="{ 'badge rounded-pill bg-success': priceUp, 'badge rounded-pill bg-danger': priceDown }">24h: {{info[currentFiatConversion+'_24h_change'] | toOneDecimal}}%</p>
+                </h6>
                 <p class="card-text">
                     <select v-model="currentFiatConversion">
                         <option value="aud">AUD</option>
@@ -13,7 +18,11 @@
                         <option value="usd">USD</option>
                     </select>
                 </p>
-                <p class="card-text"><button v-on:click="refresh" class="btn btn-outline-success"><i class="fas fa-sync-alt"></i> Refresh</button></p>
+                <p class="card-text">
+                    <button v-on:click="refresh" class="btn btn-outline-success">
+                        <i class="fas fa-sync-alt"></i> Refresh
+                    </button>
+                </p>
             </div>
         </div>
     </div>

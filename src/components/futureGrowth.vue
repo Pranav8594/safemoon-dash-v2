@@ -2,7 +2,10 @@
     <div>
         <div class="card" style="width: 18rem;">
             <div class="card-body">
-                <h5 class="card-title"><i class="fas fa-rocket"></i> Future Value: {{futureValue*currentTokenBalance | toCurrency(toCurrency)}}</h5>
+                <h5 class="card-title">
+                    <i class="fas fa-rocket"></i> 
+                    Future Value: {{futureValue*currentTokenBalance | toCurrency(toCurrency)}}
+                </h5>
                 <h6 v-if="token != null" class="card-subtitle mb-2 text-muted">{{token.name}}</h6>
                 <div class="card-text">
                     <div class="row">

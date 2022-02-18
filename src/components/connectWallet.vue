@@ -3,11 +3,20 @@
     <div class="card" style="width: 18rem;">
         <div class="card-body">
             <h5 class="card-title">Wallet <i class="fas fa-wallet"></i></h5>
-            <h6 class="card-subtitle mb-2 text-muted"><p v-if="acct_ID != null">{{acct_ID.slice(0,8)+'...'}}</p></h6>
+            <h6 class="card-subtitle mb-2 text-muted">
+                <p v-if="acct_ID != null">{{acct_ID.slice(0,8)+'...'}}</p>
+            </h6>
             <!-- <p class="card-text"><button class="btn btn-outline-info" :disabled="btnDisabled" v-on:click="connect">{{btnTitle}}</button></p> -->
             <input type="text" class="form-control" v-model="acct_ID" placeholder="Your Wallet's Public Address">
-            <p class="card-text mt-3"><button class="btn btn-outline-success" v-on:click="detectTokenBalance()"><i class="fas fa-coins"></i> Get Balance</button></p>
-            <p class="card-text" v-if="tokenBalance != null"><span class="badge bg-primary">{{tokenInfo.name}}:{{tokenBalance}}</span></p>
+            <p class="card-text mt-3">
+                <button class="btn btn-outline-success" v-on:click="detectTokenBalance()">
+                    <i class="fas fa-coins"></i> 
+                    Get Balance
+                </button>
+            </p>
+            <p class="card-text" v-if="tokenBalance != null">
+                <span class="badge bg-primary">{{tokenInfo.name}}:{{tokenBalance}}</span>
+            </p>
             <p class="red">{{msg}}</p>
         </div>
     </div>
