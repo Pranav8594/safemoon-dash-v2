@@ -32,7 +32,7 @@ export default {
     return {
       cpd: null,
       cbd: null,
-      currentToken: 'safemoon',
+      currentToken: 'safemoon-2',
       tokenMeta: null,
       currency: 'aud',
       tokens: {"safemoon-2":"Safemoon","bonfire":"Bonfire","elongate": "Elongate", "eclipse-2":"Eclipse","useless":"Useless"},

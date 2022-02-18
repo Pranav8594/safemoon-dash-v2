@@ -3,8 +3,8 @@
         <div class="card" style="width: 18rem;">
             <div class="card-body">
                 <h5 class="card-title"><i class="fas fa-piggy-bank"></i> Current Value: {{currentPrice*currentBalance | toCurrency(currency) }} 
-                    <i v-bind:class="{'red': !toggleCaret }" v-if="!toggleCaret" class="fas fa-caret-down"></i>
-                    <i v-bind:class="{ 'green': toggleCaret }" v-if="toggleCaret" class="fas fa-caret-up"></i>
+                    <!-- <i v-bind:class="{'red': !toggleCaret }" v-if="!toggleCaret" class="fas fa-caret-down"></i>
+                    <i v-bind:class="{ 'green': toggleCaret }" v-if="toggleCaret" class="fas fa-caret-up"></i> -->
                 </h5>
                 <h6 v-if="tokenMeta != null" class="card-subtitle mb-2 text-muted rounded">
                     <img v-bind:src="tokenMeta.image.small" />
