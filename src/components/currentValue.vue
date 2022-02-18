@@ -26,7 +26,7 @@ export default {
   name: 'CurrentValue',
   data(){
     return {
-      currentToken: 'safemoon',
+      currentToken: 'safemoon-2',
       toggleCaret: false
     }
   }, 
