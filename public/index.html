@@ -5,13 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/73f5f04127.js" crossorigin="anonymous"></script>
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <form class="container-fluid justify-content-start">
+        <span class="navbar-brand mb-0 h1">Token Dashboard</span>
+      </form>
+    </nav>
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
     <div id="app"></div>
+    <!-- Site footer -->
+    <footer class="footer">
+      <div class="container">
+        <p class="small-font">Copyright &copy; 2021 All Rights Reserved by PJ.</p>
+        <p class="small-font">Data powered by CoinGecko</p>
+      </div>
+    </footer>
     <!-- built files will be auto injected -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/8.4.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script src="/__/firebase/8.5.0/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+    
   </body>
 </html>
+<style>
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(221, 221, 221);
+    color: black;
+    text-align: center;
+    padding: 10px;
+    border-top: 10px solid #212529;
+  } 
+  .small-font{
+    font-size: small;
+  }
+  #app{
+    margin-bottom: 110px;
+  }
+  body{
+    /* background-image: url("Wavy_Tech-05_Single-03.jpg"); */
+    /* background-position: right bottom; Positioning*/
+    /* background-repeat: no-repeat; /*Prevent showing multiple background images*/
+    /* background-color: #22262f; */
+  }
+</style>
