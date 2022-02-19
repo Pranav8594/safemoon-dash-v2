@@ -19,6 +19,7 @@ npm run build
 ```
 npm run lint
 ```
+### Website URL
+https://tokendash-abd25.web.app/
+Website is loaded on a computer only. No mobile support yet.
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
